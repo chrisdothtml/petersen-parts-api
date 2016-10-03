@@ -1,6 +1,6 @@
 {
   "engines": {
-    "node": "^4.5.0"
+    "node": "^6.0.0"
   },
   "scripts": {
     "start": "node lib/server.js"
