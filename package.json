@@ -3,11 +3,16 @@
     "node": "^4.5.0"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node lib/server.js"
   },
   "dependencies": {
     "body-parser": "^1.15.2",
     "cors": "^2.8.1",
-    "express": "^4.14.0"
+    "dotenv": "^2.0.0",
+    "ejs": "^2.5.2",
+    "express": "^4.14.0",
+    "express-mailer": "^0.3.1",
+    "express-sanitizer": "^1.0.1",
+    "urijs": "^1.18.2"
   }
 }
