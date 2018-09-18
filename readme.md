@@ -1,32 +1,23 @@
-# Petersen Parts API
+# PPLED API
 
-> API for custom functionality on [Petersen Parts](https://petersenparts.com)
+[![StandardJS](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
+> API for custom functionality
 
 ## Methods
 
-#### /sendEmail
+### POST /sendEmail
+
+`FormData`
 
 Validates data and sends email
 
-```javascript
-$.post('/sendEmail', {
-  'form': 'become-dealer',
-  'form-data': {
-    ...
-  }
-})
-```
+#### type (required)
 
-#### form
+`String`
 
-Type: `String`
+Values: contact
 
-Values: become-dealer
+#### fields (required)
 
-`Required`
-
-#### form-data
-
-Type: `Object`
-
-`Required`
+`Object`
