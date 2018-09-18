@@ -1,18 +1,25 @@
 {
+  "private": true,
   "engines": {
-    "node": "^6.0.0"
+    "node": ">=10"
   },
   "scripts": {
-    "start": "node lib/server.js"
+    "dev": "nodemon -r esm lib/index.js",
+    "lint": "standard -v | snazzy",
+    "start": "node -r esm lib/index.js"
   },
   "dependencies": {
-    "body-parser": "^1.15.2",
-    "cors": "^2.8.1",
-    "dotenv": "^2.0.0",
-    "ejs": "^2.5.2",
-    "express": "^4.14.0",
-    "express-mailer": "^0.3.1",
-    "express-sanitizer": "^1.0.1",
-    "urijs": "^1.18.2"
+    "cors": "^2.8.4",
+    "dotenv": "^6.0.0",
+    "esm": "^3.0.82",
+    "express": "^4.16.3",
+    "express-form-data": "^2.0.6",
+    "moment": "^2.22.2",
+    "nodemailer": "^4.6.8"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4",
+    "snazzy": "^8.0.0",
+    "standard": "^12.0.1"
   }
 }

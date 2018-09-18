@@ -1,0 +1,7 @@
+# rename this file to `.env` to provide local ENV vars
+
+ALLOWED_ORIGINS=origin1,origin2
+MAIL_FROM=email@domain.com
+MAIL_TO=email@domain.com
+MAIL_URI=https://user:pass@host:port
+PORT=1337
